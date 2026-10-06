@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="login">
+                <h1>Entre e comece a desfrutar</h1>
+
+                <div class="alerta-sucesso" id="alerta-sucesso">
+                    Login realizado com sucesso! 🎉
+                </div>
+
+                <form action="#" id="form-login" novalidate>
+                    <div class="form-grupo">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="seu@email.com">
+                        <span class="mensagem-erro" id="erro-email"></span>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="senha">Senha</label>
+                        <div class="campo-senha">
+                            <input type="password" name="password" id="senha" placeholder="Digite sua senha">
+                            <button type="button" id="btn-olho" class="btn-olho" aria-label="Mostrar ou ocultar senha">👁️</button>
+                        </div>
+                        <span class="mensagem-erro" id="erro-senha"></span>
+                    </div>
+
+                    <button type="submit" id="btn-submit" class="btn-submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
